@@ -7,7 +7,7 @@ La página está diseñada para ser **responsiva**, **ligera** y **fácil de nav
 
 ## 🌐 Demo en línea
 Puedes ver la versión desplegada del sitio aquí:  
-👉 [https://felipedonet.github.io/cv](https://felipedonet.github.io/cv) *(ejemplo, reemplázalo por tu URL real)*
+👉 [https://brevecurriculum.netlify.app/](https://brevecurriculum.netlify.app/) 
 
 ---
 
