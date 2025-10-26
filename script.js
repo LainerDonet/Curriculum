@@ -36,7 +36,7 @@ const translations = {
     'copyright': '© 2025 Lainer F. Donet - Todos los derechos reservados'
   },
   en: {
-    'title': 'Earth Sciences Master Degree',
+    'title': "Earth Sciences Master's Degree",
     'city': 'Mexico City, Mexico',
     'skills-title': 'Skills',
     'skill1': 'Numerical Weather Prediction',
@@ -65,7 +65,7 @@ const translations = {
     'edu2-name': 'National Autonomous University of Mexico',
     'edu2-degree': 'PhD in Earth Sciences',
     'edu3-name': 'National Autonomous University of Mexico',
-    'edu3-degree': 'Earth Sciences Master Degree',
+    'edu3-degree': "Earth Sciences Master's Degree",
     'edu4-name': 'Higher Institute of Applied Sciences',
     'edu4-degree': "Bachelor's Degree in Meteorology",
     'social-title': 'My Social Networks',
