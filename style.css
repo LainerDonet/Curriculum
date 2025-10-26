@@ -32,7 +32,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-twothird{float:left;width:100%}
 .w3-display-container{position:relative}
 .w3-display-bottomleft{position:absolute;left:0;bottom:0}
-.nomb{color: #009688;}
+.nomb{
+  font-weight: 700; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  color: #009688;
+}
 
 @media (min-width:601px){
   .w3-third{width:33.33333%}
