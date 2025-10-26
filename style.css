@@ -32,11 +32,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-twothird{float:left;width:100%}
 .w3-display-container{position:relative}
 .w3-display-bottomleft{position:absolute;left:0;bottom:0}
-.nomb{
-    font-weight: 700; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    color: #009688;
-}
+.nomb{color: #009688;}
 
 @media (min-width:601px){
   .w3-third{width:33.33333%}
@@ -45,6 +41,57 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .w3-row-padding:after,.w3-row-padding:before,.w3-container:after,.w3-container:before{
   content:"";display:table;clear:both
+}
+
+/* Tema oscuro */
+body.dark-mode {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode .w3-white {
+  background-color: #2d2d2d !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .w3-text-grey {
+  color: #b0b0b0 !important;
+}
+
+body.dark-mode .w3-light-grey {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode .w3-card-4 {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode hr {
+  border-top: 1px solid #444;
+}
+
+body.dark-mode .w3-opacity {
+  color: #c0c0c0 !important;
+}
+
+body.dark-mode .nomb {
+  color: #4db6ac;
+}
+
+body.dark-mode .language-selector {
+  background: #2d2d2d;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .lang-btn {
+  color: #4db6ac;
+}
+
+body.dark-mode .lang-btn:hover {
+  background: #1a1a1a;
+}
+
+body.dark-mode .theme-toggle {
+  background: #2d2d2d;
 }
 
 .language-selector {
@@ -58,6 +105,31 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   padding: 5px;
   display: flex;
   gap: 5px;
+}
+
+/* Botón de tema */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 24px;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1) rotate(20deg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .lang-btn {
@@ -170,5 +242,13 @@ footer {
   .lang-btn {
     padding: 8px 15px;
     font-size: 12px;
+  }
+  
+  .theme-toggle {
+    top: 10px;
+    left: 10px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
   }
 }

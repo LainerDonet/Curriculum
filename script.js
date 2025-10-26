@@ -74,6 +74,18 @@ const translations = {
 };
 
 let currentLang = 'es';
+let isDarkMode = false;
+
+function toggleTheme() {
+  isDarkMode = !isDarkMode;
+  document.body.classList.toggle('dark-mode');
+  
+  const themeIcon = document.getElementById('theme-icon');
+  themeIcon.textContent = isDarkMode ? '☀️' : '🌙';
+  
+  // Guardar preferencia en localStorage (pero no usamos localStorage en artifacts)
+  // Solo mantenemos el estado durante la sesión
+}
 
 function switchLanguage(lang) {
   if (lang === currentLang) return;
