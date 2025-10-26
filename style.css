@@ -27,7 +27,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-round{border-radius:4px}
 .w3-center{text-align:center!important}
 .w3-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}
-.w3-light-grey{background-color:#f1f1f1!important}
 .w3-row-padding{padding:0 8px}
 .w3-third{float:left;width:100%}
 .w3-twothird{float:left;width:100%}
@@ -35,7 +34,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-display-bottomleft{position:absolute;left:0;bottom:0}
 .nomb{
     font-weight: 700; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     color: #009688;
 }
 
@@ -48,7 +47,43 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   content:"";display:table;clear:both
 }
 
-/* Estilos para el footer mejorado */
+.language-selector {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.lang-btn {
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  color: #009688;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.lang-btn:hover {
+  background: #e0f2f1;
+  transform: scale(1.05);
+}
+
+.lang-btn.active {
+  background: #009688;
+  color: white;
+}
+
 footer {
   padding: 40px 20px;
 }
@@ -82,7 +117,6 @@ footer {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Animación para las barras de progreso */
 .progress-bar {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -94,7 +128,6 @@ footer {
   border-radius: 16px;
 }
 
-/* Animación de pulso */
 @keyframes pulse {
   0%, 100% {
     transform: scale(1);
@@ -108,7 +141,6 @@ footer {
   animation: pulse 2s ease-in-out infinite;
 }
 
-/* Efecto de brillo en hover */
 .shine-effect {
   position: relative;
   overflow: hidden;
@@ -127,4 +159,16 @@ footer {
 
 .shine-effect:hover::before {
   left: 100%;
+}
+
+@media (max-width: 600px) {
+  .language-selector {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .lang-btn {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
 }
