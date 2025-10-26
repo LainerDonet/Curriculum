@@ -1,6 +1,7 @@
 const translations = {
   es: {
     'title': 'Master en Ciencias de la Tierra',
+    'city': 'Ciudad de México, México',
     'skills-title': 'Experiencia',
     'skill1': 'Predicción Numérica',
     'skill2': 'Sistema de Administración Informático',
@@ -35,6 +36,7 @@ const translations = {
   },
   en: {
     'title': 'Earth Sciences Master Degree',
+    'city': 'Mexico City, Mexico',
     'skills-title': 'Skills',
     'skill1': 'Numerical Weather Prediction',
     'skill2': 'IT System Administration',
