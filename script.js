@@ -106,7 +106,7 @@ function switchLanguage(lang) {
   });
   event.target.classList.add('active');
   
-  initializeAnimations();
+  //initializeAnimations();
 }
 
 function initializeAnimations() {
